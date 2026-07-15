@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Duo Kart Oyunu Davet</title>
+    <!-- Sosyal medya önizlemesi için -->
+    <meta property="og:title" content="Duo Kart Oyunu Davet" />
+    <meta property="og:description" content="Duo Kart Oyununda bana katıl! Eğlenceye sen de ortak ol!" />
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const inviteId = urlParams.get('id');
+            const playStoreUrl = "https://play.google.com/store/apps/details?id=com.burhan2855.duokartoyunu";
+            
+            if (!inviteId) {
+                window.location.href = playStoreUrl;
+                return;
+            }
+
+            // Uygulamayı açmayı dene
+            const appUrl = "https://burhan2855.github.io/DuoKartOyunu/invite?id=" + inviteId;
+            
+            var clickedAt = +new Date;
+            setTimeout(function() {
+                // Eğer 2.5 saniye içinde uygulama açılmadıysa (tarayıcıda kaldıysa) Play Store'a git
+                if (+new Date - clickedAt < 2600) {
+                    window.location.href = playStoreUrl;
+                }
+            }, 2500);
+
+            // Uygulama tetikleyici linke yönlendir
+            window.location.href = appUrl;
+        };
+    </script>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px; font-family: sans-serif;">
+        <h2>Duo Kart Oyunu</h2>
+        <p>Oyun açılıyor, lütfen bekleyin...</p>
+        <p>Eğer otomatik açılmazsa <a href="https://play.google.com/store/apps/details?id=com.burhan2855.duokartoyunu">buraya tıklayarak indirin</a>.</p>
+    </div>
+</body>
+</html>
