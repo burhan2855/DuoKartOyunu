@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Duo Kart Oyunu Davet</title>
+    <!-- Sosyal Medya Önizleme Bilgileri -->
+    <meta property="og:title" content="Duo Kart Oyunu'na Davetlisin!" />
+    <meta property="og:description" content="Hemen tıkla, uygulamayı indir ve oyuna katıl!" />
+    <meta property="og:image" content="https://burhan2855.github.io/DuoKartOyunu/icon.png" />
+    
+    <!-- Uygulama yoksa 2 saniye sonra Play Store'a yönlendir -->
+    <meta http-equiv="refresh" content="2; url=https://play.google.com/store/apps/details?id=com.burhan2855.duokartoyunu" />
+</head>
+<body style="background-color: #121212; color: white; text-align: center; font-family: sans-serif; padding-top: 50px;">
+    <h1>Duo Kart Oyunu</h1>
+    <p>Oyuna yönlendiriliyorsunuz...</p>
+    <p>Eğer oyun açılmazsa <a href="https://play.google.com/store/apps/details?id=com.burhan2855.duokartoyunu" style="color: #4CAF50;">buraya tıklayarak</a> Play Store'dan indirebilirsiniz.</p>
+
+    <script>
+        // Sayfa açıldığında otomatik yönlendirme denemesi
+        window.location.href = "https://play.google.com/store/apps/details?id=com.burhan2855.duokartoyunu";
+    </script>
+</body>
+</html>
